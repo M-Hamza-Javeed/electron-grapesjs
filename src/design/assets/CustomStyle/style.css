@@ -1,0 +1,319 @@
+h2 {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  html,
+  body {
+    font-family: sans-serif;
+    height: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    scrollbar-width:thin;
+  }
+
+  ::-webkit-scrollbar {
+    height: 12px;
+    width: 8px;
+    background-color: rgba(53, 53, 53, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #969696;
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+  #wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  #menuContainer {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222;
+  }
+  #menuContainer li {
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    padding: 10px 5px;
+    color: #BBB;
+    background: #1a1a1a;
+  }
+  #menuContainer li:hover {
+    background: #111;
+    color: #CCC;
+  }
+  #layoutContainer {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .lm_dragProxy .lm_header {
+    height: 50px;
+  }
+  .lm_header .lm_tab {
+    font-size: 14px;
+  }
+  .lm_header .lm_tab.lm_active,
+  .lm_header .lm_tab {
+    padding: 0px 26px 0 15px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .lm_header .lm_tab .lm_close_tab {
+    top: 50%;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+  .lm_header .lm_controls > li {
+    width: 25px;
+    height: 50px;
+  }
+  .lm_splitter{
+    width:3px !important;
+    background: rgb(14, 13, 13) !important; 
+    opacity: 1;
+  }
+  .lm_vertical{
+    width:100% !important;
+    height:3px !important;
+  }
+  .lm_header .lm_tab.lm_active, .lm_header .lm_tab{
+    height: 31px;
+    line-height: 36px;
+  }
+
+  .lm_header{
+    height: 32px !important;
+    padding-bottom: 4px !important;
+    background-color: #111;
+  }
+  .lm_header .lm_tab .lm_title{
+    font-size: 12.5px;
+  }
+
+  .lm_controls li{
+    /* margin-top: -5px; */
+    display: none !important;
+  }
+
+  :focus-visible {
+    outline: 2px  solid;
+  }
+
+  .lm_content{
+    overflow-y: auto;
+  }
+
+  .gjs-editor-cont .sp-container{
+    position: fixed !important;
+  }
+
+  #Properties-panel{
+    font-size: 12px;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  
+  .gjs-layer-name--no-edit{
+    padding-left: 10px !important;
+  }
+  .gjs-layer-count{
+    display: none;
+  }
+  .gjs-layer-vis{
+    margin-top:2px;
+  }
+  .gjs-layer-name{
+    font-weight: bold !important;
+    color: rgba(255, 255, 255, 0.856) !important;
+  }
+
+
+.lm_header .lm_tab .lm_title{
+  font-size: 12.5px;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.856);
+}
+
+.gjs-pn-views-container{
+  display: none !important;
+}
+.gjs-cv-canvas{
+  width: 100% !important;
+  width: 1000px !important;
+  top: 7px !important; 
+  position: relative !important;
+}
+
+/* .gjs-pn-views{
+  display: none !important;
+} */
+
+.gjs-pn-commands{
+  width: 100% !important;
+}
+
+.gjs-pn-options{
+  right: 0 !important;
+}
+
+.gjs-one-bg{
+  background-color: #222 !important;
+}
+
+
+#Toolbar-panel-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#Toolbar-panel{
+  height: 35px;
+}
+
+
+.gjs-pn-panels{
+  display:none !important;
+}
+
+.Templates-pages span {
+  margin-left:10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Templates-Container{
+  margin-left:15px;
+  margin-top:12px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 98%;
+  position:absolute;
+  align-items: start;
+}
+
+.File-name span{
+  font-size:13px;
+  font-weight:bold;
+  margin-left:8px;
+}
+
+.File-name{
+  margin-bottom:5px;
+  width:215px;
+  display: flex;
+}
+
+.File-name .fa-html5{
+  color: #f00;
+}
+.File-name i {
+width:15%;
+}
+.File-status{
+  margin-left:5px;
+}
+.File-name-in {
+overflow-y: hidden;
+}
+
+.File-name span {
+  width:65%;
+  display: flex;
+  overflow: hidden;
+  margin: 0px !important;
+}
+
+.Files-deactive{
+  display: none;
+}
+
+.Files{
+  margin:4px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.Templates-pages{
+  margin-bottom:12px;
+  width: 220px;
+  background-color: #535353;
+  padding: 3px 8px;
+}
+
+.File-name .fa-css3{
+  color: #00b7ff;
+}
+
+.Files-panel{
+  width:100%;
+}
+
+.File-name .fa , .File-name  span{
+  cursor: pointer;
+}
+
+.gjs-editor{
+  margin: 0px 10px !important;
+  display: grid;
+}
+
+.gjs-editor-cont{
+  overflow: auto;
+}
+
+.span-focus{
+  border: 1px solid #fff;
+  padding: 0px 3px;
+  outline: 0px;
+}
+
+.code-panel section{
+width:49%;
+background-color: #000;
+
+}
+.code-panel{
+  display: flex !important;
+  justify-content: space-between;
+}
+.cp-btn-container{
+  display: flex !important;
+  justify-content: end !important;
+}
+.gjs-btn-prim{
+  margin-left: 5px;
+  padding: 5px 15px;
+  background-color: #322931;
+}
+
+.codepanel-separator{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.codepanel-label{
+  margin-left:15px;
+}
