@@ -1,0 +1,4 @@
+.gjs-selected[data-highlightable]{
+    outline: 2px solid #3b97e3 !important;
+    outline-offset:0px !important;
+}
